@@ -1,5 +1,6 @@
 package howoocast.core.discount;
 
+import howoocast.core.member.Grade;
 import howoocast.core.member.Member;
 
 public interface DiscountPolicy {
