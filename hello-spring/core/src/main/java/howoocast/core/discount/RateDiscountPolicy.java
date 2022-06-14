@@ -2,7 +2,9 @@ package howoocast.core.discount;
 
 import howoocast.core.member.Grade;
 import howoocast.core.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RateDiscountPolicy implements DiscountPolicy{
     private int discountPercent = 10;
     @Override
