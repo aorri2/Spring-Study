@@ -24,7 +24,7 @@ public class ConfigurationSingletonTest {
 
         MemberRepository memberRepository1 = memberService.getMemberRepository();
         MemberRepository memberRepository2 = orderService.getMemberRepository();
-        MemberRepository memberRepository3 = ac.getBean("memberRepository", MemberRepository.class);
+        MemberRepository memberRepository3 = ac.getBean("memberRRepository", MemberRepository.class);
         System.out.println("memberService --> memberRepository1 = " + memberRepository1);
         System.out.println("orderService --> memberRepository2 = " + memberRepository2);
         System.out.println("memberRepository --> memberRepository3 = " + memberRepository3);

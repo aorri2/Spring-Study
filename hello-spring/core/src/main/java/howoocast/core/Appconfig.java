@@ -23,7 +23,7 @@ public class Appconfig {
         return new MemberServiceImpl(memberRepository());
     }
 
-    @Bean
+    @Bean(name = "memberRRepository")
     public MemberRepository memberRepository() {
         System.out.println("call Appconfig.memberRepository");
         return new MemoryMemberRepository();

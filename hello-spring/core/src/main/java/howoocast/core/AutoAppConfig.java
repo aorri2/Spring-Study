@@ -9,12 +9,11 @@ import org.springframework.context.annotation.FilterType;
 
 @Configuration
 @ComponentScan(
-        basePackages = "howoocast.core.member",
+        basePackages = {"howoocast.core.member","howoocast.core.order","howoocast.core.discount"},
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 public class AutoAppConfig {
-
-    @Bean(name = "memoryMemberRepository")
+    @Bean
     MemberRepository memberRepository(){
      return new MemoryMemberRepository();
     }
