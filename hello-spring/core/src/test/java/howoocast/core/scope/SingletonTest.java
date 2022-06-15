@@ -1,2 +1,5 @@
-package howoocast.core.scope;public class SingletonTest {
+package howoocast.core.scope;
+
+public class SingletonTest {
+
 }
